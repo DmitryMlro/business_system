@@ -25,3 +25,71 @@
 ```bash
 git clone https://github.com/your-username/business-system.git
 cd business-system
+```
+
+2. Створити та активувати віртуальне середовище:
+```bash
+python -m venv .venv
+source .venv/bin/activate   # або .venv\Scripts\activate для Windows
+```
+
+3. Встановити залежності: 
+```bash
+pip install -r requirements.txt
+```
+
+4. Налаштувати .env або settings.py з параметрами БД.
+
+5. Застосувати міграції:
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+6. Створити адміністратора:
+```bash
+python manage.py createsuperuser
+```
+
+7. Запустити сервер:
+```bash
+python manage.py runserver
+```
+
+Доступ до адмінки
+Перейдіть за посиланням: http://127.0.0.1:8000/admin/
+Увійдіть під логіном/паролем створеного суперкористувача.
+
+## Модульна структура
+- inventory: товари, категорії, склад
+- orders: замовлення та позиції замовлень
+- users: користувачі системи
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
