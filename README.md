@@ -24,7 +24,7 @@
 1. Клонувати репозиторій:
 ```bash
 git clone https://github.com/your-username/business-system.git
-cd business-system
+cd business_system
 ```
 
 2. Створити та активувати віртуальне середовище:
